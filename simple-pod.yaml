@@ -5,12 +5,12 @@ metadata:
 spec:
   containers:
     - image: simple-ubuntu:latest
-      name: client-test
-      imagePullPolicy: Never
+      name: simple-ubuntu
+      imagePullPolicy: IfNotPresent
       resources:
         requests:
-          cpu: "500m"
-          memory: "128Mi"
+          cpu: "50m"
+          memory: "64Mi"
         limits:
-          cpu: "1000m"
-          memory: "256Mi"
+          cpu: "100m"
+          memory: "128Mi"
